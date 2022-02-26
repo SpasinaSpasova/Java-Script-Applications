@@ -1,0 +1,56 @@
+1. REST Countries
+
+GET https://restcountries.eu/rest/v2/name/Italy?fields=name;capital;region;population
+GET https://restcountries.eu/rest/v2/lang/de?fields=name;region
+
+2. Bus Stop
+
+GET http://localhost:3030/jsonstore/bus/businfo/1287
+GET http://localhost:3030/jsonstore/bus/businfo/1308
+GET http://localhost:3030/jsonstore/bus/businfo/1327 
+GET http://localhost:3030/jsonstore/bus/businfo/2334
+
+3. Phonebook GET
+GET http://localhost:3030/jsonstore/phonebook
+
+4. Phonebook POST
+POST http://localhost:3030/jsonstore/phonebook
+
+{
+    "person": "Spasina Spasova",
+    "phone": "05245841653"
+}
+
+5. Employees 
+GET http://dummy.restapiexample.com/api/v1/employees
+GET http://dummy.restapiexample.com/api/v1/employee/1
+
+POST http://dummy.restapiexample.com/api/v1/create
+{
+    "name":"Spasina",
+    "salary":"750",
+    "age":"22"
+}
+{
+    "status": "success",
+    "data": {
+        "id": 6607
+    },
+    "message": "Successfully! Record has been added."
+}
+
+PUT http://dummy.restapiexample.com/api/v1/update/21
+{
+    "status": "success",
+    "data": [],
+    "message": "Successfully! Record has been updated."
+}
+
+
+DELETE http://dummy.restapiexample.com/api/v1/delete/2
+
+{
+    "status": "success",
+    "data": "2",
+    "message": "Successfully! Record has been deleted"
+}
